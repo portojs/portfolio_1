@@ -18,16 +18,12 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loaders: 'style!css!resolve-url'
-      },
-      {
         test: /\.scss$/,
-        loader: 'style!css!resolve-url!sass?sourceMap'
+        loader: 'style!css!sass'
       },
       {
-        test: /.jpg$/,
-        loader: 'file'
+        test: /\.svg$/,
+        loader: 'file-loader'
       }
     ]
   },
