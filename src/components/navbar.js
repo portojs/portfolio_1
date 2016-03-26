@@ -4,11 +4,10 @@ class NavBar extends Component {
   render() {
     return(
       <div className="nav-bar">
-        <h1>Navbar</h1>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li className="btns" id="btn1"></li>
+          <li className="btns" id="btn2"></li>
+          <li className="btns" id="btn3"></li>
         </ul>
       </div>
     );

@@ -1,9 +1,44 @@
+//*****************************************************
+// GLOBAL
+//*****************************************************
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+
+
+//*****************************************************
+// NAVBAR
+//*****************************************************
+
 .nav-bar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: yellow;
+  background-color: black;
   height: 100%;
-  width: 150px;
+  width: 120px;
+}
+
+.btns {
+  background: url('../icons/571202.jpg');
+  background-size: 900% 900%;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#btn1 {
+  background-position: -234px -218px;
+}
+
+#btn2 {
+  background-position: -492px -311px;
+}
+
+#btn3 {
+  background-position: -404px -218px;
 }
