@@ -4,11 +4,10 @@ class NavBar extends Component {
   render() {
     return(
       <div className="nav-bar">
-        <h1>Navbar</h1>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li className="btns" id="btn1"><span></span></li>
+          <li className="btns" id="btn2"><span></span></li>
+          <li className="btns" id="btn3"><span></span></li>
         </ul>
       </div>
     );
@@ -16,3 +15,14 @@ class NavBar extends Component {
 }
 
 export default NavBar;
+
+var html = function(newHtml) {
+  if (arguments.length) {
+    $.each(this, function(index, element) {
+      element.innerHTML = newHtml;
+    });
+    return this;
+  } else {
+    return this[0].innerHTML;
+  }
+}

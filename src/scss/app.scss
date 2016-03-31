@@ -1,6 +1,71 @@
+//*****************************************************
+// GLOBAL
+//*****************************************************
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+
+
+//*****************************************************
+// NAVBAR
+//*****************************************************
+
 .nav-bar {
   position: fixed;
-  background-color: yellow;
+  top: 0;
+  left: 0;
+  z-index: 999;
   height: 100%;
-  width: 300px;
+  width: 90px;
+  background-color: #3b3b3b;
+  background-color: #323232;
+}
+
+.btns {
+  background: url('../icons/9-01-tt.jpg');
+  background-size: 999% 999%;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.btns span {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background: url('../icons/9-01-t.jpg');
+  background-size: 999% 999%;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition:    opacity 0.5s;
+  -o-transition:      opacity 0.5s;
+}
+
+#btn1,
+#btn1 span {
+  background-position: -494px -429px;
+}
+
+#btn2,
+#btn2 span {
+  background-position: -346px -279px;
+}
+
+#btn3,
+#btn3 span {
+  background-position: -116px -429px;
+}
+
+.btns:hover span {
+    opacity: 1;
 }

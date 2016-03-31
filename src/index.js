@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 
 import NavBar from './components/navbar';
 
+import './scss/app.scss';
+
 class App extends Component {
   render() {
     return (
       <div>
         <NavBar />
-        App
       </div>
     );
   }

@@ -1,35 +1,31 @@
-var path = require('path');
-var webpack = require('webpack');
+var path = require('path'),
+    webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
-  loaders: [
-      {
-        test: /.jsx?$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
+    loaders: [
+        {
+          test: /.jsx?$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/,
+          query: {
+            presets: ['es2015', 'react']
+          }
+        },
+        {
+          test: /\.scss$/,
+          loader: 'style!css!sass'
+        },
+        {
+          test: /\.(png|jpg)$/,
+          loader: 'url-loader?limit=8192'
         }
-      },
-      {
-        test: /\.css$/,
-        loaders: 'style!css!resolve-url'
-      },
-      {
-        test: /\.scss$/,
-        loader: 'style!css!resolve-url!sass?sourceMap'
-      },
-      {
-        test: /.jpg$/,
-        loader: 'file'
-      }
-    ]
+      ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
