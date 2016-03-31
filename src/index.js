@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import NavBar from './components/navbar';
+import TitleBar from './components/title-bar';
 
 import './scss/app.scss';
 
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div>
         <NavBar />
+        <TitleBar />
       </div>
     );
   }

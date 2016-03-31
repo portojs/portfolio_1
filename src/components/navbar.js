@@ -15,14 +15,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-var html = function(newHtml) {
-  if (arguments.length) {
-    $.each(this, function(index, element) {
-      element.innerHTML = newHtml;
-    });
-    return this;
-  } else {
-    return this[0].innerHTML;
-  }
-}
