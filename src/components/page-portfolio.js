@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class PagePortfolio extends Component {
   render() {
     return (
-      <div>
+      <div id="portfolio">
         <div className="splash">
           <div className="splash-title">
             <h1>Portfolio</h1>

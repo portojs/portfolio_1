@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class PageContact extends Component {
   render() {
     return (
-      <div>
+      <div id="contact">
         <div className="splash">
           <div className="splash-title">
             <h1>Reach Out</h1>

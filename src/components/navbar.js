@@ -5,9 +5,15 @@ class NavBar extends Component {
     return(
       <div className="nav-bar">
         <ul>
-          <li className="btns" id="btn1"><span></span></li>
-          <li className="btns" id="btn2"><span></span></li>
-          <li className="btns" id="btn3"><span></span></li>
+          <li className="btns" id="btn1">
+            <a href="#about"><span></span></a>
+          </li>
+          <li className="btns" id="btn2">
+            <a href="#portfolio"><span></span></a>
+          </li>
+          <li className="btns" id="btn3">
+            <a href="#contact"><span></span></a>
+          </li>
         </ul>
       </div>
     );
