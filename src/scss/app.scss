@@ -89,7 +89,78 @@ ul {
   float: right;
 }
 
-#splash-about {
-  background-color: blue;
+
+
+//*****************************************************
+// PAGE: ABOUT
+//*****************************************************
+
+#about-splash {
+  background-color: #5F94E8;
   height: 25em;
+  text-align: center;
+}
+
+#about-splash h1 {
+  display: inline-block;
+  position: relative;
+  color: #FFC65C;
+  border: 1px solid #FFC65C;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#about-content {
+  background-color: #FFC65C;
+  height: 35em;
+}
+
+//*****************************************************
+// PAGE: PORTFOLIO
+//*****************************************************
+
+#portfolio-splash {
+  background-color: #5F94E8;
+  height: 25em;
+  text-align: center;
+}
+
+#portfolio-splash h1 {
+  display: inline-block;
+  position: relative;
+  color: #FFC65C;
+  border: 1px solid #FFC65C;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#portfolio-content {
+  background-color: #61CF5D;
+  height: 35em;
+}
+
+
+
+//*****************************************************
+// PAGE: CONTACT
+//*****************************************************
+
+#contact-splash {
+  background-color: #5F94E8;
+  height: 25em;
+  text-align: center;
+}
+
+#contact-splash h1 {
+  display: inline-block;
+  position: relative;
+  color: #FFC65C;
+  border: 1px solid #FFC65C;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#contact-content {
+  background-color: #F7EC4F;
+  height: 35em;
 }
