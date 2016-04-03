@@ -4,10 +4,12 @@ class PageAbout extends Component {
   render() {
     return (
       <div>
-        <div id="about-splash">
-          <h1>Peter Krevenets</h1>
+        <div className="splash">
+          <div className="splash-title">
+            <h1>Peter Krevenets | Web Developer</h1>
+          </div>
         </div>
-        <div id="about-content">
+        <div className="content">
         </div>
       </div>
     );

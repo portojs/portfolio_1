@@ -4,10 +4,12 @@ class PagePortfolio extends Component {
   render() {
     return (
       <div>
-        <div id="portfolio-splash">
-          <h1>Portfolio</h1>
+        <div className="splash">
+          <div className="splash-title">
+            <h1>Portfolio</h1>
+          </div>
         </div>
-        <div id="portfolio-content">
+        <div className="content">
         </div>
       </div>
     );

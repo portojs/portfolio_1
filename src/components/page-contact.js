@@ -4,10 +4,12 @@ class PageContact extends Component {
   render() {
     return (
       <div>
-        <div id="contact-splash">
-          <h1>Reach Out</h1>
+        <div className="splash">
+          <div className="splash-title">
+            <h1>Reach Out</h1>
+          </div>
         </div>
-        <div id="contact-content">
+        <div className="content">
         </div>
       </div>
     );

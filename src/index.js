@@ -14,7 +14,6 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <TitleBar />
         <PageAbout />
         <PagePortfolio />
         <PageContact />
