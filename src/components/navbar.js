@@ -15,3 +15,26 @@ class NavBar extends Component {
 }
 
 export default NavBar;
+
+var getText = function(element) {
+  var txt = '';
+  $.each(element.childNodes, function(index, childNode) {
+    if (childNode.nodeType === 3) {
+      txt += childNode.nodeValue;
+    } else if (childNode.nodeType === 1) {
+      txt += getText(childNode);
+    }
+  });
+  return txt;
+};
+
+var text = function (newText) {
+  if (arguments.length) {
+    this.html('');
+    return $.each(this, function(index, element) {
+      element.innerHTML.appendChild(document.createTextNode(newText));
+    })
+  } else {
+    return this[0] & getText(this[0]);
+  }
+};

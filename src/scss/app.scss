@@ -2,6 +2,10 @@
 // GLOBAL
 //*****************************************************
 
+body {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding-left: 15px;
@@ -68,4 +72,24 @@ ul {
 
 .btns:hover span {
     opacity: 1;
+}
+
+//*****************************************************
+// TITLE-BAR
+//*****************************************************
+
+.title-bar {
+  background-color: yellow;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.title-bar p {
+  float: right;
+}
+
+#splash-about {
+  background-color: blue;
+  height: 25em;
 }
