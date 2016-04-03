@@ -11,34 +11,6 @@ ul {
   padding-left: 15px;
 }
 
-/* About, Portolio and Contact */
-
-.splash {
-  display: table;
-  background-color: #5F94E8;
-  width: 100%;
-  height: 25em;
-  text-align: center;
-}
-
-.splash .splash-title {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.splash h1 {
-  display: inline-block;
-  color: #FFC65C;
-  padding: .25em .75em;
-  border: 1px solid #FFC65C;
-  margin-left: 90px;
-}
-
-.content {
-  background-color: #FFC65C;
-  height: 35em;
-}
-
 //*****************************************************
 // NAVBAR
 //*****************************************************
@@ -50,8 +22,8 @@ ul {
   z-index: 999;
   height: 100%;
   width: 90px;
-  background-color: #3b3b3b;
   background-color: #323232;
+  background-color: #3e3e3b;
 }
 
 .btns {
@@ -116,9 +88,45 @@ ul {
 }
 
 //*****************************************************
-// PAGE: ABOUT
+// PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
 
+.splash {
+  display: table;
+  background-color: #858476;
+  width: 100%;
+  height: 25em;
+  text-align: center;
+}
+
+.splash .splash-title {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.splash h1 {
+  display: inline-block;
+  color: #FFC65C;
+  padding: .25em .75em;
+  border: 1px solid #FFC65C;
+  margin-left: 90px;
+}
+
+.content {
+  height: 35em;
+}
+
+#about .content {
+  background-color: #5F94E8;
+}
+
+#portfolio .content {
+  background-color: #8EE698;
+}
+
+#contact .content {
+  background-color: #EBE29D;
+}
 
 //*****************************************************
 // PAGE: PORTFOLIO
