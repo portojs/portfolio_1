@@ -3,6 +3,7 @@
 //*****************************************************
 
 body {
+  background-color: #dbdbdb;
   margin: 0;
 }
 
@@ -107,6 +108,7 @@ ul {
 .splash h1 {
   display: inline-block;
   color: #FFC65C;
+  color: #fff;
   font-size: 3em;
   text-shadow: 1px 1px 1px #000;
   padding: .25em .75em;
@@ -116,6 +118,11 @@ ul {
 
 .content {
   height: 35em;
+  margin: 20px 20px 20px 110px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 #about .content {
@@ -156,6 +163,7 @@ ul {
 
 #footer p {
   color: #6e6e6e;
+  height: 10em;
   font-size: 0.8em;
   margin: 0;
   padding: 10px 0 5px 95px;
