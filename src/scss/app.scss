@@ -107,8 +107,10 @@ ul {
 .splash h1 {
   display: inline-block;
   color: #FFC65C;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #000;
   padding: .25em .75em;
-  border: 1px solid #FFC65C;
+  // border: 1px solid #FFC65C;
   margin-left: 90px;
 }
 
@@ -118,25 +120,31 @@ ul {
 
 #about .content {
   background-color: #5F94E8;
+  background-color: #de6a6a;
+}
+
+#about .splash {
+  background: url('../img/about-splash.jpg') no-repeat bottom fixed;
+  background-size: cover;
 }
 
 #portfolio .content {
   background-color: #8EE698;
 }
 
+#portfolio .splash {
+  background: url('../img/portfolio-splash.jpg') no-repeat bottom fixed;
+  background-size: cover;
+}
+
 #contact .content {
   background-color: #EBE29D;
 }
 
-//*****************************************************
-// PAGE: PORTFOLIO
-//*****************************************************
-
-
-//*****************************************************
-// PAGE: CONTACT
-//*****************************************************
-
+#contact .splash {
+  background: url('../img/contact-splash.jpg') no-repeat bottom fixed;
+  background-size: cover;
+}
 
 //*****************************************************
 // FOOTER
