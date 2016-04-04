@@ -10,6 +10,13 @@ class PagePortfolio extends Component {
           </div>
         </div>
         <div className="content">
+          <ul>
+            <li>
+              <a href="http://codepen.io/GuRuGu/full/ONPXKb/" target="_blank">
+                <img src="src/img/portfolio-content1.jpg" label="Stephen King Tribute Page" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     );
