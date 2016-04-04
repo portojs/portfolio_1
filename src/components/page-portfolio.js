@@ -4,12 +4,10 @@ class PagePortfolio extends Component {
   render() {
     return (
       <div id="portfolio">
-        <div className="splash">
-          <div className="splash-title">
+        <div className="content">
+          <div className="content-title">
             <h1>Portfolio</h1>
           </div>
-        </div>
-        <div className="content">
           <ul>
             <li>
               <a href="http://codepen.io/GuRuGu/full/ONPXKb/" target="_blank">

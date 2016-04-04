@@ -160,13 +160,21 @@ ul {
   box-shadow: 0 1px 2px #888;
 }
 
-#about .content-title {
+#about .content-title,
+#portfolio .content-title {
   text-align: center;
   color: #fff;
-  background-color: #de6a6a;
   padding: 1em 0;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+#about .content-title {
+  background-color: #de6a6a;
+}
+
+#portfolio .content-title {
+  background-color: #65A66A;
 }
 
 #about .content .left-column,
