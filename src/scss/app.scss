@@ -13,6 +13,9 @@ h2,
 h3,
 h4 {
   font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  // font-family: 'Varela Round', sans-serif;
+  // font-family: 'Istok Web', sans-serif;
 }
 
 p {
@@ -157,6 +160,15 @@ ul {
   box-shadow: 0 1px 2px #888;
 }
 
+#about .content-title {
+  text-align: center;
+  color: #fff;
+  background-color: #de6a6a;
+  padding: 1em 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 #about .content .left-column,
 #about .content .right-column {
   display: inline-block;
@@ -204,9 +216,22 @@ ul {
   padding: 3em;
 }
 
+#portfolio .content a {
+  width: auto;
+  background: linear-gradient(#fff, transparent 90%),
+              url('../img/portfolio-content1_2.jpg');
+  display: block;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
 #portfolio .content img {
   height: 200px;
   width: auto;
+  padding: 2px;
   border: 1px solid #888;
   // border-radius: 50%;
 }
