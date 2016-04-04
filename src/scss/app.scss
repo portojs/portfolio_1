@@ -127,7 +127,7 @@ ul {
 
 .content-title h1 {
   display: inline-block;
-  color: #FFC65C;
+  // color: #FFC65C;
   // color: #fff;
   // color: #F2E079;
   // color: #ADDE78;
@@ -162,7 +162,8 @@ ul {
 }
 
 #about .content-title,
-#portfolio .content-title {
+#portfolio .content-title,
+#contact .content-title {
   text-align: center;
   color: #fff;
   padding: 0.5em 0;
@@ -176,6 +177,10 @@ ul {
 
 #portfolio .content-title {
   background-color: #65A66A;
+}
+
+#contact .content-title {
+  background-color: #91CEED;
 }
 
 #about .content .left-column,
@@ -252,6 +257,8 @@ ul {
 
 #contact .content {
   background-color: #EBE29D;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #888;
 }
 
 //*****************************************************
