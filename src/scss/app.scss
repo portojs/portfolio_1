@@ -18,7 +18,8 @@ h4 {
   // font-family: 'Istok Web', sans-serif;
 }
 
-p {
+p,
+ul {
   font-size: 1.2em;
 }
 
@@ -183,20 +184,20 @@ ul {
   background-color: #91CEED;
 }
 
-#about .content .left-column,
-#about .content .right-column {
+.content .left-column,
+.content .right-column {
   display: inline-block;
   width: 40%;
 }
 
-#about .content .left-column {
+.content .left-column {
   float: left;
   margin: 3.5em 5%;
 }
 
-#about .content .right-column {
+.content .right-column {
   text-align: center;
-  margin: 3em 5%;
+  margin: 4em 5%;
 }
 
 #about .content .right-column img {

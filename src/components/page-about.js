@@ -10,11 +10,13 @@ class PageAbout extends Component {
           </div>
           <div className="left-column">
             <p>
-              My name is Peter and I am a full-time freelance translator
-              who discovered the world of coding. When I&#39;m not translating,
-              I learn programming, and to enjoy life a little bit more I also
-              fill it with sports, travelling, books, music, movies,
-              videogames.
+              My name is Peter and I&#39;m a full-time freelance translator
+              discovering the world of coding. I like JavaScript and especially
+              such frameworks as AngularJS and ReactJS.
+            </p>
+            <p>
+              To enjoy life even more I dabble in sport, travelling,
+              reading, listening to music, watching movies, and playing videogames.
             </p>
             <ul>
               <li>JavaScript</li>
