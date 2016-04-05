@@ -123,28 +123,11 @@ ul {
 .content {
   background-color: $color-section;
   box-shadow: 0 1px 2px #888;
-  height: auto;
   margin: 20px 20px 20px 110px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-}
-
-.content .left-column,
-.content .right-column {
-  display: inline-block;
-  width: 40%;
-}
-
-.content .left-column {
-  float: left;
-  margin: 3.5em 5%;
-}
-
-.content .right-column {
-  text-align: center;
-  margin: 4em 5%;
 }
 
 #about .content-title {
@@ -159,6 +142,22 @@ ul {
   background-color: $blue;
 }
 
+#about .left-column,
+#about .right-column {
+  display: inline-block;
+  width: 40%;
+}
+
+#about .left-column {
+  float: left;
+  margin: 3.5em 5%;
+}
+
+#about .right-column {
+  text-align: center;
+  margin: 4em 5% 8em;
+}
+
 #about img {
   padding: 5px;
   border: 5px solid $green;
@@ -167,6 +166,7 @@ ul {
 
 #about ul {
   padding-left: 0;
+  margin: 2.2em 0;
   text-align: center;
 }
 
@@ -182,11 +182,6 @@ ul {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   margin-right: 1em;
-}
-
-#about ul li:hover {
-  color: $green;
-  background-color: $color-section;
 }
 
 #portfolio .content li {
