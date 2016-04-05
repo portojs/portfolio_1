@@ -11,8 +11,12 @@ class PageAbout extends Component {
           <div className="left-column">
             <p>
               My name is Peter and I&#39;m a full-time freelance translator
-              discovering the world of coding. I like JavaScript and especially
-              such frameworks as AngularJS and ReactJS.
+              discovering the world of coding.
+            </p>
+            <p>
+              I like coding as a whole, so it&#39;s hard to choose one
+              favourite programming languae, but for now it&#39;s
+              JavaScript, especially AngularJS and ReactJS.
             </p>
             <p>
               To enjoy life even more I dabble in sport, travelling,

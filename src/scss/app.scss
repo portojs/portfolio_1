@@ -106,6 +106,14 @@ ul {
 // PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
 
+.content-title {
+  text-align: center;
+  color: #fff;
+  padding: 0.5em 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 .content-title h1 {
   display: inline-block;
   font-size: 2em;
@@ -121,28 +129,6 @@ ul {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-}
-
-#about .content-title,
-#portfolio .content-title,
-#contact .content-title {
-  text-align: center;
-  color: #fff;
-  padding: 0.5em 0;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-#about .content-title {
-  background-color: $green;
-}
-
-#portfolio .content-title {
-  background-color: $red;
-}
-
-#contact .content-title {
-  background-color: $blue;
 }
 
 .content .left-column,
@@ -161,18 +147,30 @@ ul {
   margin: 4em 5%;
 }
 
-#about .content .right-column img {
-  padding: 2px;
-  border: 2px solid #888;
+#about .content-title {
+  background-color: $green;
+}
+
+#portfolio .content-title {
+  background-color: $red;
+}
+
+#contact .content-title {
+  background-color: $blue;
+}
+
+#about img {
+  padding: 5px;
+  border: 5px solid $green;
   border-radius: 50%;
 }
 
-#about .content .left-column ul {
+#about ul {
   padding-left: 0;
   text-align: center;
 }
 
-#about .content .left-column ul li {
+#about ul li {
   display: inline-block;
   color: $white;
   background-color: $green;
@@ -184,18 +182,11 @@ ul {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   margin-right: 1em;
-  transition: all 1000;
 }
 
-#about .content .left-column ul li:hover {
+#about ul li:hover {
   color: $green;
   background-color: $color-section;
-}
-
-#portfolio .content {
-  background-color: #8EE698;
-  background-color: #fff;
-  box-shadow: 0 1px 2px #888;
 }
 
 #portfolio .content li {
@@ -207,12 +198,6 @@ ul {
   width: auto;
   padding: 2px;
   border: 1px solid #888;
-}
-
-#contact .content {
-  background-color: #EBE29D;
-  background-color: #fff;
-  box-shadow: 0 1px 2px #888;
 }
 
 //*****************************************************
