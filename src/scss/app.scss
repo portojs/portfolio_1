@@ -142,20 +142,25 @@ ul {
   background-color: $blue;
 }
 
-#about .left-column,
-#about .right-column {
+.left-column,
+.right-column {
   display: inline-block;
   width: 40%;
 }
 
-#about .left-column {
+.left-column {
   float: left;
   margin: 3.5em 5%;
 }
 
-#about .right-column {
+.right-column {
   text-align: center;
   margin: 4em 5% 8em;
+}
+
+#portfolio .right-column {
+  text-align: left;
+  margin: 3.5em 5%;
 }
 
 #about img {
@@ -184,15 +189,30 @@ ul {
   margin-right: 1em;
 }
 
-#portfolio .content li {
-  padding: 3em;
-}
-
 #portfolio .content img {
   height: 200px;
   width: auto;
   padding: 2px;
   border: 1px solid #888;
+}
+
+#portfolio ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+#portfolio ul li {
+  display: inline-block;
+  color: $white;
+  background-color: $red;
+  font-weight: bold;
+  padding: 8px;
+  border: 2px solid $red;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right: 1em;
 }
 
 //*****************************************************
