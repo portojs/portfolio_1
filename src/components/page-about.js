@@ -18,7 +18,7 @@ class PageAbout extends Component {
               To enjoy life even more I dabble in sport, travelling,
               reading, listening to music, watching movies, and playing videogames.
             </p>
-            <ul>
+            <ul className="skill-list">
               <li>JavaScript</li>
               <li>HTML</li>
               <li>CSS</li>

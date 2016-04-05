@@ -1,4 +1,12 @@
 //*****************************************************
+// variables
+//*****************************************************
+
+$green: #65A66A;
+$red: #de6a6a;
+$blue: #91CEED;
+
+//*****************************************************
 // GLOBAL
 //*****************************************************
 
@@ -109,11 +117,8 @@ ul {
 //*****************************************************
 
 .splash {
-  // display: table;
   background-color: #858476;
-  // width: 100%;
   text-align: center;
-  // height: 10em;
   margin: 20px 20px 20px 110px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -121,20 +126,9 @@ ul {
   border-bottom-left-radius: 15px;
 }
 
-.splash .splash-title {
-  // display: table-cell;
-  // vertical-align: middle;
-}
-
 .content-title h1 {
   display: inline-block;
-  // color: #FFC65C;
-  // color: #fff;
-  // color: #F2E079;
-  // color: #ADDE78;
   font-size: 2em;
-  // text-shadow: 1px 1px 1px #000;
-  // padding: 0 .75em;
   margin: 0.5em 0;
 }
 
@@ -148,16 +142,7 @@ ul {
   border-bottom-left-radius: 15px;
 }
 
-#about .splash {
-  // background: url('../img/about-splash.jpg') no-repeat center center fixed;
-  // background-size: cover;
-}
-
 #about .content {
-  // background-color: #5F94E8;
-  background-color: #de6a6a;
-  background-color: #97DEB1;
-  background-color: #91CEED;
   background-color: #f5f5f5;
   box-shadow: 0 1px 2px #888;
 }
@@ -173,15 +158,15 @@ ul {
 }
 
 #about .content-title {
-  background-color: #de6a6a;
+  background-color: $green;
 }
 
 #portfolio .content-title {
-  background-color: #65A66A;
+  background-color: $red;
 }
 
 #contact .content-title {
-  background-color: #91CEED;
+  background-color: $blue;
 }
 
 .content .left-column,
@@ -207,18 +192,21 @@ ul {
 }
 
 #about .content .left-column ul {
+  color: $green;
+  font-weight: bold;
   padding-left: 0;
   text-align: center;
 }
 
 #about .content .left-column ul li {
   display: inline-block;
-  padding-right: 2em;
-}
-
-#portfolio .splash {
-  // background: url('../img/portfolio-splash.jpg') no-repeat bottom fixed;
-  // background-size: cover;
+  padding: 7px;
+  border: 2px solid $green;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right: 2em;
 }
 
 #portfolio .content {
@@ -229,18 +217,6 @@ ul {
 
 #portfolio .content li {
   padding: 3em;
-  // background: linear-gradient(#000, transparent 90%);
-}
-
-#portfolio .content a {
-  // width: auto;
-  // // background: url('../img/portfolio-content1_2.jpg');
-  // display: block;
-  // min-height: 200px;
-  // background-repeat: no-repeat;
-  // background-size: 200px 200px;
-  // padding: 0 0 0 30px;
-  // margin: 0 0 10px;
 }
 
 #portfolio .content img {
@@ -248,12 +224,6 @@ ul {
   width: auto;
   padding: 2px;
   border: 1px solid #888;
-  // border-radius: 50%;
-}
-
-#contact .splash {
-  // background: url('../img/contact-splash.jpg') no-repeat bottom fixed;
-  // background-size: cover;
 }
 
 #contact .content {
