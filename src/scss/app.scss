@@ -1,5 +1,5 @@
 //*****************************************************
-// variables
+// variables and extends
 //*****************************************************
 
 $white: #fff;
@@ -10,6 +10,13 @@ $blue: #91CEED;
 
 $color-body: #dbdbdb;
 $color-section: #f5f5f5;
+
+%border-radius {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 
 //*****************************************************
 // GLOBAL
@@ -121,13 +128,10 @@ ul {
 }
 
 .content {
+  @extend %border-radius;
   background-color: $color-section;
   box-shadow: 0 1px 2px #888;
   margin: 20px 20px 20px 110px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
 }
 
 #about .content-title {
@@ -153,14 +157,9 @@ ul {
   margin: 3.5em 5%;
 }
 
-.right-column {
+#about .right-column {
   text-align: center;
   margin: 4em 5% 8em;
-}
-
-#portfolio .right-column {
-  text-align: left;
-  margin: 3.5em 5%;
 }
 
 #about img {
@@ -171,26 +170,28 @@ ul {
 
 #about ul {
   padding-left: 0;
-  margin: 2.2em 0;
-  text-align: center;
+  margin: 1.9em 0 2.2em;
 }
 
 #about ul li {
+  @extend %border-radius;
   display: inline-block;
   color: $white;
   background-color: $green;
   font-weight: bold;
   padding: 8px;
   border: 2px solid $green;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
   margin-right: 1em;
 }
 
+#portfolio .right-column {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 3.5em 5%;
+}
+
 #portfolio .content img {
-  height: 200px;
+  height: 280px;
   width: auto;
   padding: 2px;
   border: 1px solid #888;
@@ -198,21 +199,17 @@ ul {
 
 #portfolio ul {
   padding-left: 0;
-  text-align: center;
 }
 
 #portfolio ul li {
+  @extend %border-radius;
   display: inline-block;
   color: $white;
   background-color: $red;
   font-weight: bold;
   padding: 8px;
   border: 2px solid $red;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  margin-right: 1em;
+  margin-right: 0.4em;
 }
 
 //*****************************************************
