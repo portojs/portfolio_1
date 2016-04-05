@@ -28,7 +28,7 @@ class PagePortfolio extends Component {
             <h4>Technologies:</h4>
             <ul>
               <li>JavaScript</li>
-              <li>Jquery</li>
+              <li>jQuery</li>
               <li>Bootstrap</li>
               <li>HTML/CSS</li>
             </ul>
