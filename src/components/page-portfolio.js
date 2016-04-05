@@ -14,18 +14,20 @@ class PagePortfolio extends Component {
             </a>
           </div>
           <div className="right-column">
-            <h4>Title:</h4>
+            <h3>Title:</h3>
             <p>Stephen King Tribute Page</p>
-            <h4>Description:</h4>
+            <h3>Description:</h3>
             <p>
-              A test to my skills a Free Code Camp task. At first I didn&#39;t
-              know where to start and just copying from the example
-              seemed too boring. Then one day I saw a nice sliding animation
-              and something clicked - finally there was something interesting
-              I wanted to try. As for Stephen King - I read so many
-              of his books in my teens that it was no choice at all.
+              A test to my skills and a Free Code Camp task.
+              At first I didn&#39;t know where to start and
+              just copying from the example seemed too boring.
+              Then one day I saw a nice sliding animation and
+              something clicked - finally there was something
+              interesting I wanted to try. As for Stephen King
+              - I read so many of his books in my teens that
+              it was no choice at all.
             </p>
-            <h4>Technologies:</h4>
+            <h3>Technologies:</h3>
             <ul>
               <li>JavaScript</li>
               <li>jQuery</li>

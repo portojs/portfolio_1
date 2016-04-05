@@ -2,20 +2,32 @@
 // variables and extends
 //*****************************************************
 
+//
 $white: #fff;
 $black: #000;
 $green: #65A66A;
 $red: #de6a6a;
-$blue: #91CEED;
+$blue: #569AE8;
 
+//
 $color-body: #dbdbdb;
 $color-section: #f5f5f5;
 
+// rounded boxes
 %border-radius {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+// clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 //*****************************************************
@@ -113,6 +125,13 @@ ul {
 // PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
 
+.content {
+  @extend %border-radius;
+  background-color: $color-section;
+  box-shadow: 0 1px 2px #888;
+  margin: 40px 40px 10px 130px;
+}
+
 .content-title {
   text-align: center;
   color: #fff;
@@ -125,13 +144,6 @@ ul {
   display: inline-block;
   font-size: 2em;
   margin: 0.5em 0;
-}
-
-.content {
-  @extend %border-radius;
-  background-color: $color-section;
-  box-shadow: 0 1px 2px #888;
-  margin: 40px 40px 40px 130px;
 }
 
 #about .content-title {
@@ -159,10 +171,12 @@ ul {
 
 #about .left-column,
 #portfolio .left-column {
-  margin: 5em 5%;
+  margin: 5em 5% 0;
 }
 
-#about .left-column p:first-child {
+#about .left-column p:first-child,
+#contact .left-column p:first-child,
+#contact ul {
   margin-top: 0;
 }
 
@@ -195,8 +209,12 @@ ul {
   margin-right: 1em;
 }
 
+#about,
+#portfolio {
+  @extend %clearfix;
+}
+
 #portfolio .right-column {
-  text-align: left;
   margin: 5em 5% 3.5em;
 }
 
@@ -207,7 +225,7 @@ ul {
   border: 1px solid #888;
 }
 
-#portfolio h4 {
+#portfolio h3 {
   margin: 0 0 0.6em;
 }
 
@@ -230,6 +248,11 @@ ul {
   border: 2px solid $red;
   margin-top: 0.4em;
   margin-right: 0.4em;
+}
+
+#contact .left-column,
+#contact .right-column {
+  margin: 5em 5% 3.5em;
 }
 
 //*****************************************************
