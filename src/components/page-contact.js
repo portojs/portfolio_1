@@ -16,12 +16,12 @@ class PageContact extends Component {
             </p>
           </div>
           <div className="right-column">
-            <ul>
-              <li>Twitter</li>
-              <li>Facebook</li>
-              <li>LinkedIn</li>
-              <li>GitHub</li>
-              <li>Codepen</li>
+            <ul className="fa-ul">
+              <li><i className="fa-li fa fa-twitter"></i> Twitter</li>
+              <li><i className="fa-li fa fa-facebook"></i> Facebook</li>
+              <li><i className="fa-li fa fa-linkedin"></i> LinkedIn</li>
+              <li><i className="fa-li fa fa-github-alt"></i> GitHub</li>
+              <li><i className="fa-li fa fa-codepen"></i> Codepen</li>
             </ul>
           </div>
         </div>

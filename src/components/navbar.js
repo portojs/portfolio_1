@@ -15,6 +15,11 @@ class NavBar extends Component {
             <a href="#contact"><span></span></a>
           </li>
         </ul>
+        <ul className="fa-list">
+          <li><i className="fa fa-home"></i></li>
+          <li><i className="fa fa-list-ul"></i></li>
+          <li><i className="fa fa-envelope"></i></li>
+        </ul>
       </div>
     );
   }
