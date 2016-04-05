@@ -6,7 +6,7 @@ class PageContact extends Component {
       <div id="contact">
         <div className="content">
           <div className="content-title">
-            <h1>Reach Out</h1>
+            <h1>CONTACT ME</h1>
           </div>
           <div className="left-column">
             <p>

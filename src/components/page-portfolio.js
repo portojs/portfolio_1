@@ -6,7 +6,7 @@ class PagePortfolio extends Component {
       <div id="portfolio">
         <div className="content">
           <div className="content-title">
-            <h1>Portfolio</h1>
+            <h1>PORTFOLIO</h1>
           </div>
           <div className="left-column">
             <a href="http://codepen.io/GuRuGu/full/ONPXKb/" target="_blank">

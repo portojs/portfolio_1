@@ -46,8 +46,8 @@ h3,
 h4 {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Ubuntu', sans-serif;
-  // font-family: 'Varela Round', sans-serif;
-  // font-family: 'Istok Web', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-family: 'Istok Web', sans-serif;
 }
 
 p,
@@ -166,11 +166,6 @@ ul {
 
 .left-column {
   float: left;
-  margin: 3.5em 5%;
-}
-
-#about .left-column,
-#portfolio .left-column {
   margin: 5em 5% 0;
 }
 
@@ -250,7 +245,6 @@ ul {
   margin-right: 0.4em;
 }
 
-#contact .left-column,
 #contact .right-column {
   margin: 5em 5% 3.5em;
 }
