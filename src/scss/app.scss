@@ -2,16 +2,21 @@
 // variables
 //*****************************************************
 
+$white: #fff;
+$black: #000;
 $green: #65A66A;
 $red: #de6a6a;
 $blue: #91CEED;
+
+$color-body: #dbdbdb;
+$color-section: #f5f5f5;
 
 //*****************************************************
 // GLOBAL
 //*****************************************************
 
 body {
-  background-color: #dbdbdb;
+  background-color: $color-body;
   margin: 0;
   font-family: 'Quattrocento', serif;
 }
@@ -98,33 +103,8 @@ ul {
 }
 
 //*****************************************************
-// TITLE-BAR
-//*****************************************************
-
-.title-bar {
-  background-color: yellow;
-  height: 3em;
-  padding: 0;
-  margin: 0;
-}
-
-.title-bar p {
-  float: right;
-}
-
-//*****************************************************
 // PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
-
-.splash {
-  background-color: #858476;
-  text-align: center;
-  margin: 20px 20px 20px 110px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
 
 .content-title h1 {
   display: inline-block;
@@ -133,18 +113,14 @@ ul {
 }
 
 .content {
-  height: 35em;
+  background-color: $color-section;
+  box-shadow: 0 1px 2px #888;
   height: auto;
   margin: 20px 20px 20px 110px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-}
-
-#about .content {
-  background-color: #f5f5f5;
-  box-shadow: 0 1px 2px #888;
 }
 
 #about .content-title,
@@ -192,21 +168,28 @@ ul {
 }
 
 #about .content .left-column ul {
-  color: $green;
-  font-weight: bold;
   padding-left: 0;
   text-align: center;
 }
 
 #about .content .left-column ul li {
   display: inline-block;
-  padding: 7px;
+  color: $white;
+  background-color: $green;
+  font-weight: bold;
+  padding: 8px;
   border: 2px solid $green;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  margin-right: 2em;
+  margin-right: 1em;
+  transition: all 1000;
+}
+
+#about .content .left-column ul li:hover {
+  color: $green;
+  background-color: $color-section;
 }
 
 #portfolio .content {
