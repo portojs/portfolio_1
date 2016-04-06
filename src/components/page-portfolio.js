@@ -32,7 +32,6 @@ class PagePortfolio extends Component {
               <li>JavaScript</li>
               <li>jQuery</li>
               <li>Bootstrap</li>
-              <li>HTML/CSS</li>
             </ul>
           </div>
         </div>
