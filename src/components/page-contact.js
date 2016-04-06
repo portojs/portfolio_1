@@ -11,17 +11,19 @@ class PageContact extends Component {
           <div className="left-column">
             <p>
               If you have any questions or wish to chat about
-              universe and all other interesting things,
+              programming and other interesting things,
               feel free to write me a couple of lines.
             </p>
           </div>
           <div className="right-column">
-            <ul className="fa-ul">
-              <li><i className="fa-li fa fa-twitter"></i> Twitter</li>
-              <li><i className="fa-li fa fa-facebook"></i> Facebook</li>
-              <li><i className="fa-li fa fa-linkedin"></i> LinkedIn</li>
-              <li><i className="fa-li fa fa-github-alt"></i> GitHub</li>
-              <li><i className="fa-li fa fa-codepen"></i> Codepen</li>
+            <ul className="">
+              <li>
+                <a href="" target="_blank"><i className="fa fa-envelope-o"></i></a>
+              </li>
+              <li><a href="" target="_blank"><i className="fa fa-twitter-square"></i></a></li>
+              <li><a href="" target="_blank"><i className="fa fa-facebook-square"></i></a></li>
+              <li><a href="" target="_blank"><i className="fa fa-linkedin-square"></i></a></li>
+              <li><a href="" target="_blank"><i className="fa fa-github-square"></i></a></li>
             </ul>
           </div>
         </div>

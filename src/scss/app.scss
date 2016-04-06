@@ -1,15 +1,11 @@
-//*****************************************************
-// variables and extends
-//*****************************************************
-
-//
+// Descriptive color variables
 $white: #fff;
 $black: #000;
 $green: #65A66A;
 $red: #de6a6a;
 $blue: #569AE8;
 
-//
+// Functional color variables
 $color-body: #dbdbdb;
 $color-section: #f5f5f5;
 
@@ -63,6 +59,7 @@ ul {
 // NAVBAR
 //*****************************************************
 
+// fixed navbar
 .nav-bar {
   position: fixed;
   top: 0;
@@ -220,6 +217,20 @@ ul {
 
 #contact .right-column {
   margin: 5em 5% 3.5em;
+}
+
+#contact ul {
+  padding-left: 0;
+}
+
+#contact li {
+  display: inline-block;
+  padding-right: 1.2em;
+}
+
+#contact i {
+  font-size: 3em;
+  color: $blue;
 }
 
 //*****************************************************
