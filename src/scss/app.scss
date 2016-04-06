@@ -175,7 +175,8 @@ ul {
 }
 
 #about,
-#portfolio {
+#portfolio,
+#contact {
   @extend %clearfix;
 }
 
@@ -216,21 +217,29 @@ ul {
 }
 
 #contact .right-column {
-  margin: 5em 5% 3.5em;
+  margin: 5em 5% 7em;
+}
+
+#contact h3 {
+  margin-top: 0;
 }
 
 #contact ul {
-  padding-left: 0;
+  // padding-left: 0;
 }
 
 #contact li {
-  display: inline-block;
-  padding-right: 1.2em;
+  // display: inline-block;
+  // padding-right: 1.2em;
 }
 
 #contact i {
-  font-size: 3em;
+  // font-size: 3em;
   color: $blue;
+  // height: 40px;
+  // width: 40px;
+  // border: 1px solid $blue;
+  // border-radius: 50%;
 }
 
 //*****************************************************
