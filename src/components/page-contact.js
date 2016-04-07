@@ -22,11 +22,11 @@ class PageContact extends Component {
             </p>
           </div>
           <div className="right-column">
-            <ul>
-              <li><a href="https://twitter.com/peter_krevenets" target="_blank"><i className="fa fa-twitter-square fa-5x"></i></a></li>
-              <li><a href="https://ua.linkedin.com/in/peter-krevenets-35b50b33" target="_blank"><i className="fa fa-linkedin-square fa-5x"></i></a></li>
-              <li><a href="https://github.com/GuRuGuMaWaRu" target="_blank"><i className="fa fa-github-square fa-5x"></i></a></li>
-            </ul>
+            <p>
+              Later on this is where the contact form is going to be.
+              As for now please use other means of communication
+              listed here.
+            </p>
           </div>
         </div>
       </div>

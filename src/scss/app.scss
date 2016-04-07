@@ -147,7 +147,7 @@ a {
 
 #about .left-column p:first-child,
 #contact .left-column p:first-child,
-#contact ul {
+#contact .right-column p:first-child {
   margin-top: 0;
 }
 
@@ -180,9 +180,9 @@ a {
   margin-right: 1em;
 }
 
-#about,
-#portfolio,
-#contact {
+#about .left-column,
+#portfolio .left-column,
+#contact .left-column {
   @extend %clearfix;
 }
 
@@ -223,7 +223,7 @@ a {
 }
 
 #contact .right-column {
-  margin: 5em 5% 5em;
+  margin: 5em 5% 7em;
 }
 
 #contact a {
@@ -285,7 +285,7 @@ a {
 }
 
 #footer i {
-  color: $blue;
+  color: $color-nav;
   &:hover {
     color: $green;
   }
