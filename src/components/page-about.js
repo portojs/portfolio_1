@@ -6,7 +6,7 @@ class PageAbout extends Component {
       <div id="about">
         <div className="content">
           <div className="content-title">
-            <h1>PETER KREVENETS | WEB DEVELOPER</h1>
+            <h2>PETER KREVENETS | WEB DEVELOPER</h2>
           </div>
           <div className="left-column">
             <p>
