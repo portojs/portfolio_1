@@ -48,7 +48,9 @@ h4 {
 }
 
 p,
-ul {
+ul,
+label,
+button {
   font-size: 1.2em;
 }
 
@@ -222,24 +224,20 @@ a {
   margin-right: 0.4em;
 }
 
+#contact form {
+  width: 100%;
+}
+
+#contact fieldset {
+  display: block;
+}
+
 #contact .right-column {
   margin: 5em 5% 7em;
 }
 
 #contact a {
   padding-left: 15px;
-}
-
-#contact li {
-  display: inline-block;
-  padding-right: 1.2em;
-}
-
-#contact i {
-  color: $blue;
-  &:hover {
-    color: $green;
-  }
 }
 
 //*****************************************************
