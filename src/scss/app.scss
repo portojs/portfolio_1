@@ -31,7 +31,9 @@ $color-nav: #3e3e3b;
 // GLOBAL
 //*****************************************************
 
-body {
+body,
+textarea,
+input {
   background-color: $color-body;
   margin: 0;
   font-family: 'Quattrocento', serif;
@@ -258,10 +260,28 @@ a {
   border: none;
   border-bottom: 1px solid $color-nav;
   margin-bottom: 2em;
+  &:focus {
+    outline: 0;
+  }
+}
+
+textarea {
+  font-size: 1.2rem;
+  resize: none;
 }
 
 #contact a {
   padding-left: 15px;
+}
+
+#contact button {
+  @extend %border-radius;
+  color: $white;
+  background-color: $blue;
+  position: relative;
+  padding: 10px 25px;
+  border: 1px solid $blue;
+  margin: 0 50%;
 }
 
 //*****************************************************

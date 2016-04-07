@@ -9,22 +9,22 @@ class PageContact extends Component {
             <h2>CONTACT</h2>
           </div>
           <div className="left-column">
-            <form>
+            <form id="contactForm" noValidate>
               <div>
                 <span></span>
                 <label htmlFor="form-name">Name:</label>
               </div>
-                <input id="form-name" type="text" />
+                <input id="form-name" type="text" required />
               <div>
                 <span></span>
                 <label htmlFor="form-email">Email address:</label>
               </div>
-                <input id="form-email" type="text" />
+                <input id="form-email" type="text" required />
               <div>
                 <span></span>
                 <label htmlFor="form-message">Message:</label>
               </div>
-                <textarea rows="5" id="form-message" />
+                <textarea rows="4" id="form-message" required />
               <button type="submit">Send</button>
             </form>
           </div>
