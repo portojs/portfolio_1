@@ -9,28 +9,22 @@ class PageContact extends Component {
             <h1>CONTACT</h1>
           </div>
           <div className="left-column">
-            <h3>General information</h3>
             <p>
               If you have any questions or propositions,
               please do not hesitate to contact me!
             </p>
             <p>
-              I&#39;m also interested in all the interesting bits
-              on JavaScript, so if you know any great resources
-              feel free to drop a few lines.
+              Following is my email address:
             </p>
             <p>
-              Twitter and email are the best ways to reach me.
+              <a href="#">peter.k.nets@gmail.com</a>
             </p>
           </div>
           <div className="right-column">
-            <h3>Contact details</h3>
-            <ul className="fa-ul">
-              <li><a href="" target="_blank"><i className="fa-li fa fa-envelope-o"></i>peter.k.nets@gmail.com</a></li>
-              <li><a href="" target="_blank"><i className="fa-li fa fa-twitter-square"></i>@peter_krevenets</a></li>
-              <li><a href="" target="_blank"><i className="fa-li fa fa-facebook-square"></i>peter.krevenets</a></li>
-              <li><a href="" target="_blank"><i className="fa-li fa fa-linkedin-square"></i>Peter Krevenets</a></li>
-              <li><a href="" target="_blank"><i className="fa-li fa fa-github-square"></i>GuRuGuMaWaRu</a></li>
+            <ul>
+              <li><a href="" target="_blank"><i className="fa fa-twitter-square fa-5x"></i></a></li>
+              <li><a href="" target="_blank"><i className="fa fa-linkedin-square fa-5x"></i></a></li>
+              <li><a href="" target="_blank"><i className="fa fa-github-square fa-5x"></i></a></li>
             </ul>
           </div>
         </div>
