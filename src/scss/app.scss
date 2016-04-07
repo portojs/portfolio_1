@@ -50,6 +50,8 @@ h4 {
 p,
 ul,
 label,
+input,
+textarea,
 button {
   font-size: 1.2em;
 }
@@ -224,16 +226,38 @@ a {
   margin-right: 0.4em;
 }
 
+#contact .right-column {
+  margin: 5em 5% 17em;
+}
+
 #contact form {
   width: 100%;
 }
 
-#contact fieldset {
-  display: block;
+#contact form span {
+  background-color: $blue;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-bottom: -1px;
 }
 
-#contact .right-column {
-  margin: 5em 5% 7em;
+#contact label {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#contact input,
+#contact textarea {
+  background-color: $color-section;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid $color-nav;
+  margin-bottom: 2em;
 }
 
 #contact a {

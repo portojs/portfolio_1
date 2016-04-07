@@ -11,17 +11,20 @@ class PageContact extends Component {
           <div className="left-column">
             <form>
               <div>
+                <span></span>
                 <label htmlFor="form-name">Name:</label>
-                <input id="form-name" type="text" placeholder="Name" />
               </div>
+                <input id="form-name" type="text" />
               <div>
+                <span></span>
                 <label htmlFor="form-email">Email address:</label>
-                <input id="form-email" type="text" placeholder="Email address" />
               </div>
+                <input id="form-email" type="text" />
               <div>
+                <span></span>
                 <label htmlFor="form-message">Message:</label>
-                <textarea rows="5" id="form-message" placeholder="Message" />
               </div>
+                <textarea rows="5" id="form-message" />
               <button type="submit">Send</button>
             </form>
           </div>
