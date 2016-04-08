@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 
 class PageContact extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  checkForm(obj) {
+    console.log(obj);
+    if ($(this).value === '') {
+      $(this).closest('.warning-message').css('opacity', '1');
+    }
+  }
+
   render() {
     return (
       <div id="contact">
@@ -10,12 +23,12 @@ class PageContact extends Component {
           </div>
 
           <div className="left-column">
-            <form id="contactForm" noValidate>
+            <form id="contactForm" name="contactForm" noValidate>
               <div>
                 <span></span>
                 <label htmlFor="form-name">Name:</label>
               </div>
-                <input id="form-name" type="text" name="name" required />
+                <input id="form-name" type="text" name="name" onBlur={this => this.checkForm(this)} required />
                 <p className="warning-message">Please enter your name</p>
               <div>
                 <span></span>
