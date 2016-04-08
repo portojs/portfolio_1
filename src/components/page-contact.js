@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
 class PageContact extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
 
   checkForm(ev) {
     ev.preventDefault();
@@ -16,11 +11,7 @@ class PageContact extends Component {
   }
 
   toggleMessage(val, inputField) {
-    if (val) {
-      inputField.next().css('opacity','0');
-    } else {
-      inputField.next().css('opacity','1');
-    }
+    val ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
   }
 
   render() {
