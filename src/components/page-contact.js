@@ -9,39 +9,18 @@ class PageContact extends Component {
 
   checkForm(ev) {
     ev.preventDefault();
-    const errors = this.validateFields(document.forms['contactForm']);
-    if (errors.name) {
-      $('#form-name').next().css('opacity','1');
-    } else if (!errors.name) {
-      $('#form-name').next().css('opacity','0');
-    }
-    if (errors.email) {
-      $('#form-email').next().css('opacity','1');
-    } else if (!errors.email) {
-      $('#form-email').next().css('opacity','0');
-    }
-    if (errors.message) {
-      $('#form-message').next().css('opacity','1');
-    } else if (!errors.message) {
-      $('#form-message').next().css('opacity','0');
-    }
-
+    const formData = document.forms['contactForm'];
+    this.toggleMessage(formData['name'].value, $('#form-name'));
+    this.toggleMessage(formData['email'].value, $('#form-email'));
+    this.toggleMessage(formData['message'].value, $('#form-message'));
   }
 
-  validateFields(formData) {
-    const errors = {};
-
-    if (!formData['name'].value) {
-      errors.name = 'Please enter your name';
+  toggleMessage(val, inputField) {
+    if (val) {
+      inputField.next().css('opacity','0');
+    } else {
+      inputField.next().css('opacity','1');
     }
-    if (!formData['email'].value) {
-      errors.email = 'Please enter your email';
-    }
-    if (!formData['message'].value) {
-      errors.message = 'Please enter your message';
-    }
-
-    return errors;
   }
 
   render() {
