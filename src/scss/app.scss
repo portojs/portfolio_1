@@ -63,7 +63,6 @@ ul {
 }
 
 a {
-  color: $blue;
   text-decoration: none;
 }
 
@@ -232,10 +231,6 @@ a {
   margin: 5em 5% 17em;
 }
 
-#contact form {
-  width: 100%;
-}
-
 #contact form span {
   background-color: $blue;
   display: inline-block;
@@ -259,19 +254,23 @@ a {
   padding: 0;
   border: none;
   border-bottom: 1px solid $color-nav;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   &:focus {
     outline: 0;
   }
 }
 
-textarea {
+#contact textarea {
   font-size: 1.2rem;
   resize: none;
 }
 
-#contact a {
-  padding-left: 15px;
+#contact .warning-message {
+  color: red;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 2px;
+  opacity: 0;
 }
 
 #contact button {
@@ -281,7 +280,32 @@ textarea {
   position: relative;
   padding: 10px 25px;
   border: 1px solid $blue;
-  margin: 0 50%;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition:    all 0.5s;
+  -o-transition:      all 0.5s;
+  &:hover {
+    background-color: darken($blue, 30%);
+  }
+}
+
+#contact a {
+  color: $blue;
+  -webkit-transition: all 0.5s;
+  -moz-transition:    all 0.5s;
+  -o-transition:      all 0.5s;
+  &:hover {
+    color: darken($blue, 30%);
+  }
+}
+
+#contact i {
+  padding-right: 0.5em;
+}
+
+#contact a {
+  display: inline-block;
+  padding-top: 1.5em;
 }
 
 //*****************************************************
