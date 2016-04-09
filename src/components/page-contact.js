@@ -2,16 +2,24 @@ import React, { Component } from 'react';
 
 class PageContact extends Component {
 
+  // Task: check email format while user types
+  // 1. use 'keyup' event to check
+    // current value of input field vs a regex expression
+  verifyEmailAddress(email){
+    const regexObj = /\w+/;
+    console.log(regexObj.test(email));
+  }
+
+  toggleMessage(val, inputField) {
+    val ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
+  }
+
   checkForm(ev) {
     ev.preventDefault();
     const formData = document.forms['contactForm'];
     this.toggleMessage(formData['name'].value, $('#form-name'));
     this.toggleMessage(formData['email'].value, $('#form-email'));
     this.toggleMessage(formData['message'].value, $('#form-message'));
-  }
-
-  toggleMessage(val, inputField) {
-    val ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
   }
 
   render() {
@@ -34,7 +42,9 @@ class PageContact extends Component {
                 <span></span>
                 <label htmlFor="form-email">Email address:</label>
               </div>
-                <input id="form-email" type="email" name="email" required />
+                <input id="form-email" type="email" name="email"
+                  onChange={event => this.verifyEmailAddress(event.target.value)}
+                  required />
                 <p className="warning-message">Please enter your email address</p>
               <div>
                 <span></span>
