@@ -4,14 +4,33 @@ class PageContact extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      regexObj: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+    };
   }
 
-  checkForm(obj) {
-    console.log(obj);
-    if ($(this).value === '') {
-      $(this).closest('.warning-message').css('opacity', '1');
+  // add red underlining if email is invalid
+  verifyEmailAddress(email){
+    this.state.regexObj.test(email) ?
+      $('#form-email').removeClass('false-input') :
+      $('#form-email').addClass('false-input');
+  }
+
+  // show error message if input field is invalid
+  checkInput(inputField) {
+    if (inputField.attr('id') === 'form-email') {
+      this.state.regexObj.test(inputField.val()) ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
+    } else {
+      inputField.val() ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
     }
+  }
+
+  // check input fields for beign valid
+  checkForm(ev) {
+    ev.preventDefault();
+    this.checkInput($('#form-name'));
+    this.checkInput($('#form-email'));
+    this.checkInput($('#form-message'));
   }
 
   render() {
@@ -23,18 +42,20 @@ class PageContact extends Component {
           </div>
 
           <div className="left-column">
-            <form id="contactForm" name="contactForm" noValidate>
+            <form onSubmit={event => this.checkForm(event)} name="contactForm" noValidate>
               <div>
                 <span></span>
                 <label htmlFor="form-name">Name:</label>
               </div>
-                <input id="form-name" type="text" name="name" onBlur={this => this.checkForm(this)} required />
+                <input id="form-name" type="text" name="name" required />
                 <p className="warning-message">Please enter your name</p>
               <div>
                 <span></span>
                 <label htmlFor="form-email">Email address:</label>
               </div>
-                <input id="form-email" type="email" name="email" required />
+                <input id="form-email" type="email" name="email"
+                  onChange={event => this.verifyEmailAddress(event.target.value)}
+                  required />
                 <p className="warning-message">Please enter your email address</p>
               <div>
                 <span></span>
