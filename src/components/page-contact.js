@@ -12,8 +12,7 @@ class PageContact extends Component {
   // add red underlining if email is invalid
   verifyEmailAddress(email){
     this.state.regexObj.test(email) ?
-      $('#form-email').removeClass('false-input') :
-      $('#form-email').addClass('false-input');
+      $('#form-email').removeClass('false-input') : $('#form-email').addClass('false-input');
   }
 
   // show error message if input field is invalid
