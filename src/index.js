@@ -24,6 +24,13 @@ class App extends Component {
   }
 }
 
+// page scrolling feature
+$('body').on('click', '.nav-bar a', function(ev) {
+  ev.preventDefault();
+  const $anchor = $(this);
+  $('body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top}, 1000);
+});
+
 ReactDOM.render(
   <App />,
   document.getElementById('container')
