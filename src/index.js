@@ -24,6 +24,7 @@ class App extends Component {
   }
 }
 
+// page scrolling feature
 $('body').on('click', '.nav-bar a', function(ev) {
   ev.preventDefault();
   const $anchor = $(this);
