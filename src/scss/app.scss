@@ -108,6 +108,27 @@ a {
 }
 
 //*****************************************************
+// NAVBAR - TOOLTIPS
+//*****************************************************
+
+a[title='Home']::before {
+  position: absolute;
+}
+
+a[title='Home']::before {
+  content: 'Home';
+  width: 140px;
+  height: 60px;
+  line-height: 60px;
+  color: $white;
+  background: $color-nav;
+  border-radius: .25em;
+  top: 10px;
+  left: 130px;
+  text-align: center;
+}
+
+//*****************************************************
 // PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
 
