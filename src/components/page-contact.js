@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
 
 class PageContact extends Component {
+  constructor(props) {
+    super(props);
 
-  // Task: check email format while user types
-  // 1. use 'keyup' event to check
-    // current value of input field vs a regex expression
+    this.state = {
+      regexObj: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+    };
+  }
+
+  // add red underlining if email is invalid
   verifyEmailAddress(email){
-    const regexObj = /\w+/;
-    console.log(regexObj.test(email));
+    this.state.regexObj.test(email) ?
+      $('#form-email').removeClass('false-input') :
+      $('#form-email').addClass('false-input');
   }
 
-  toggleMessage(val, inputField) {
-    val ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
+  // show error message if input field is invalid
+  checkInput(inputField) {
+    if (inputField.attr('id') === 'form-email') {
+      this.state.regexObj.test(inputField.val()) ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
+    } else {
+      inputField.val() ? inputField.next().css('opacity','0') : inputField.next().css('opacity','1');
+    }
   }
 
+  // check input fields for beign valid
   checkForm(ev) {
     ev.preventDefault();
-    const formData = document.forms['contactForm'];
-    this.toggleMessage(formData['name'].value, $('#form-name'));
-    this.toggleMessage(formData['email'].value, $('#form-email'));
-    this.toggleMessage(formData['message'].value, $('#form-message'));
+    this.checkInput($('#form-name'));
+    this.checkInput($('#form-email'));
+    this.checkInput($('#form-message'));
   }
 
   render() {

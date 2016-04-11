@@ -265,6 +265,10 @@ a {
   }
 }
 
+#contact input.false-input {
+  border-bottom: 1px solid red;
+}
+
 #contact textarea {
   font-size: 1.2rem;
   resize: none;
