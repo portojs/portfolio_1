@@ -108,6 +108,97 @@ a {
 }
 
 //*****************************************************
+// NAVBAR - TOOLTIPS
+//*****************************************************
+
+#Home::before,
+#Home::after,
+#Portfolio::before,
+#Portfolio::after,
+#Contact::before,
+#Contact::after {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+#Home::before,
+#Portfolio::before,
+#Contact::before {
+  text-align: center;
+  font-size: 0.9em;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  color: $white;
+  background: $color-nav;
+  padding: 0 10px;
+  border-radius: .25em;
+  left: 100px;
+}
+
+#Home::before {
+  content: 'Home';
+  top: 23px;
+}
+
+#Portfolio::before {
+  content: 'Portfolio';
+  top: 92px;
+}
+
+#Contact::before {
+  content: 'Contact';
+  top: 163px;
+}
+
+#Home::after,
+#Portfolio::after,
+#Contact::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-right-color: $color-nav;
+  left: 83px;
+}
+
+#Home::after {
+  top: 33px;
+}
+
+#Portfolio::after {
+  top: 102px;
+}
+
+#Contact::after {
+  top: 173px;
+}
+
+#Home:hover::before,
+#Home:hover::after,
+#Portfolio:hover::before,
+#Portfolio:hover::after,
+#Contact:hover::before,
+#Contact:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Home:hover::before,
+#Portfolio:hover::before,
+#Contact:hover::before {
+  left: 105px;
+}
+
+#Home:hover::after,
+#Portfolio:hover::after,
+#Contact:hover::after {
+  left: 87px;
+}
+
+//*****************************************************
 // PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
 
