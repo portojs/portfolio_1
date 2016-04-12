@@ -6,13 +6,13 @@ class NavBar extends Component {
       <div className="nav-bar">
         <ul className="fa-list">
           <li>
-            <a href="#about" title="Home"><i className="fa fa-home"></i></a>
+            <a href="#about" id="Home"><i className="fa fa-home"></i></a>
           </li>
           <li>
-            <a href="#portfolio" title="Portfolio"><i className="fa fa-list-ul"></i></a>
+            <a href="#portfolio" id="Portfolio"><i className="fa fa-list-ul"></i></a>
           </li>
           <li>
-            <a href="#contact" title="Contact"><i className="fa fa-envelope-o"></i></a>
+            <a href="#contact" id="Contact"><i className="fa fa-envelope-o"></i></a>
           </li>
         </ul>
       </div>

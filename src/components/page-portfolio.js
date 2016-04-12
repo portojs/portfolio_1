@@ -41,5 +41,3 @@ class PagePortfolio extends Component {
 }
 
 export default PagePortfolio;
-
-// <img src="src/img/portfolio-content1_2.jpg" label="Stephen King Tribute Page" />
