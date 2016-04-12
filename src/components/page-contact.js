@@ -39,7 +39,6 @@ class PageContact extends Component {
           <div className="content-title">
             <h2>CONTACT</h2>
           </div>
-
           <span className="leftc">
             <form onSubmit={event => this.checkForm(event)} name="contactForm" noValidate>
               <div>

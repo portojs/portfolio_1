@@ -237,6 +237,13 @@ a {
   background-color: $blue;
 }
 
+.leftc,
+.rightc {
+  display: inline-block;
+  width: 40%;
+  margin: 5em 5% 5em;
+}
+
 .left-column,
 .right-column {
   display: inline-block;
