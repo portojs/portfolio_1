@@ -85,7 +85,6 @@ a {
   z-index: 999;
   height: 100%;
   width: 90px;
-  // background-color: #323232;
   background-color: $color-nav;
 }
 
@@ -94,38 +93,42 @@ a {
 }
 
 .nav-bar li {
-  @extend %transition;
   margin-bottom: 1.1em;
+}
+
+.fa-list i {
+  @extend %transition;
+  color: $white;
+  font-size: 2.5em;
   opacity: 0.3;
   &:hover {
     opacity: 1;
   }
-}
-
-.fa-list i {
-  color: $white;
-  font-size: 2.5em;
+  &.highlight {
+    opacity: 1;
+    color: $green;
+  }
 }
 
 //*****************************************************
 // NAVBAR - TOOLTIPS
 //*****************************************************
 
-#Home::before,
-#Home::after,
-#Portfolio::before,
-#Portfolio::after,
-#Contact::before,
-#Contact::after {
+.about::before,
+.about::after,
+.portfolio::before,
+.portfolio::after,
+.contact::before,
+.contact::after {
   position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
 }
 
-#Home::before,
-#Portfolio::before,
-#Contact::before {
+.about::before,
+.portfolio::before,
+.contact::before {
   text-align: center;
   font-size: 0.9em;
   width: auto;
@@ -138,24 +141,24 @@ a {
   left: 100px;
 }
 
-#Home::before {
-  content: 'Home';
+.about::before {
+  content: 'About';
   top: 23px;
 }
 
-#Portfolio::before {
+.portfolio::before {
   content: 'Portfolio';
   top: 92px;
 }
 
-#Contact::before {
+.contact::before {
   content: 'Contact';
   top: 163px;
 }
 
-#Home::after,
-#Portfolio::after,
-#Contact::after {
+.about::after,
+.portfolio::after,
+.contact::after {
   content: '';
   width: 0;
   height: 0;
@@ -164,37 +167,37 @@ a {
   left: 83px;
 }
 
-#Home::after {
+.about::after {
   top: 33px;
 }
 
-#Portfolio::after {
+.portfolio::after {
   top: 102px;
 }
 
-#Contact::after {
+.contact::after {
   top: 173px;
 }
 
-#Home:hover::before,
-#Home:hover::after,
-#Portfolio:hover::before,
-#Portfolio:hover::after,
-#Contact:hover::before,
-#Contact:hover::after {
+.about:hover::before,
+.about:hover::after,
+.portfolio:hover::before,
+.portfolio:hover::after,
+.contact:hover::before,
+.contact:hover::after {
   opacity: 1;
   visibility: visible;
 }
 
-#Home:hover::before,
-#Portfolio:hover::before,
-#Contact:hover::before {
+.about:hover::before,
+.portfolio:hover::before,
+.contact:hover::before {
   left: 105px;
 }
 
-#Home:hover::after,
-#Portfolio:hover::after,
-#Contact:hover::after {
+.about:hover::after,
+.portfolio:hover::after,
+.contact:hover::after {
   left: 87px;
 }
 
