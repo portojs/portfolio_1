@@ -73,7 +73,7 @@ class PageContact extends Component {
             </p>
             <p>
               The contact form to the left is currently
-              not functioning, so you can send an email to:
+              not functioning, but you can send an email instead:
             </p>
             <p>
               <a href="mailto:peter.k.nets@gmail.com">

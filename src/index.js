@@ -24,6 +24,34 @@ class App extends Component {
   }
 }
 
+// helper function to add/remove class for the button corresponding
+// to the current section
+function highlightButton(currentButton) {
+  const buttons = ['about', 'portfolio', 'contact'];
+  buttons.forEach(function(button) {
+    if (button === currentButton) {
+      $('.' + button).find('i').addClass('highlight');
+    } else {
+      $('.' + button).find('i').removeClass('highlight');
+    }
+  });
+}
+
+// highlight nav-button corresponding to the current section
+$(window).on('scroll', function() {
+  const windowOffset = $(window).scrollTop(),
+        aboutOffset = $('#about').offset().top - 240,
+        portfolioOffset = $('#portfolio').offset().top  - 240,
+        contactOffset = $('#contact').offset().top  - 240;
+  if (windowOffset > contactOffset) {
+    highlightButton('contact');
+  } else if (windowOffset > portfolioOffset) {
+    highlightButton('portfolio');
+  } else if (windowOffset > aboutOffset) {
+    highlightButton('about');
+  }
+});
+
 // scroll to a page section after nav-button click
 $('body').on('click', '.nav-bar a', function(ev) {
   ev.preventDefault();
@@ -31,30 +59,6 @@ $('body').on('click', '.nav-bar a', function(ev) {
   $('body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top}, 1000);
 });
 
-// nav-button is highlighted when a corresponding page section is reached
-$(window).on('scroll', function() {
-  const windowOffset = $(window).scrollTop(),
-        aboutOffset = $('#about').offset().top,
-        portfolioOffset = $('#portfolio').offset().top,
-        contactOffset = $('#contact').offset().top,
-        aboutButton = $('.contact').find('i'),
-        portfolioButton = $('.portfolio').find('i'),
-        contactButton = $('.contact').find('i');
-  console.log(windowOffset, portfolioOffset);
-  if (windowOffset > contactOffset) {
-    contactButton.addClass('highlight');
-    portfolioButton.removeClass('highlight');
-    aboutButton.removeClass('highlight');
-  } else if (windowOffset > portfolioOffset) {
-    portfolioButton.addClass('highlight');
-    contactButton.removeClass('highlight');
-    aboutButton.removeClass('highlight');
-  } else if (windowOffset > aboutOffset) {
-    aboutButton.addClass('highlight');
-    contactButton.removeClass('highlight');
-    portfolioButton.removeClass('highlight');
-  }
-});
 
 ReactDOM.render(
   <App />,
