@@ -209,13 +209,17 @@ a {
 // PAGE SECTIONS: ABOUT, PORTFOLIO, CONTACT
 //*****************************************************
 
-.content {
-  @extend %border-radius;
+.content,
+.content-footer {
   display: flex;
   flex-wrap: wrap;
+  margin: 40px 40px 10px 130px;
+}
+
+.content {
+  @extend %border-radius;
   background-color: $color-section;
   box-shadow: 0 1px 2px #888;
-  margin: 40px 40px 10px 130px;
   & ul {
     margin: 1.9em 0 0;
   }
@@ -338,12 +342,13 @@ a {
 
 #contact label {
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 #contact input,
 #contact textarea {
   background-color: $color-section;
+  // background-color: #FFFCD1;
   display: block;
   width: 100%;
   padding: 0;
@@ -411,24 +416,28 @@ a {
 #footer {
   color: $color-nav;
   background-color: $color-body;
-  text-align: center;
-  margin-left: 90px;
+  align-items: center;
+  justify-content: center;
+  // text-align: center;
+  // margin-left: 90px;
 }
 
 #footer .left-column,
 #footer .right-column {
-  position: relative;
-  width: 25%;
+  flex: 0 0 20em;
+  text-align: center;
 }
 
 #footer .left-column {
-  padding-right: 10px;
-  margin: 3.5em 0 1em 24%;
+  // padding-right: 10px;
+  // margin: 3.5em 0 1em 24%;
+  padding-right: 48px;
   border-right: 1px solid $color-nav;
+  margin-right: 0;
 }
 
 #footer .right-column {
-  margin: 3.5em 24% 1em 0;
+  margin-left: 0;
 }
 
 #footer h3 {
@@ -454,9 +463,11 @@ a {
 }
 
 #footer .copyright {
+  text-align: center;
   font-size: 0.9em;
   margin: 0;
   padding: 3.4em 0 5px;
+  width: 100%;
 }
 
 //*****************************************************
@@ -464,9 +475,9 @@ a {
 //*****************************************************
 
 @media screen and (max-width: 1100px) {
-  // body {
-  //   background-color: red;
-  // }
+  body {
+    background-color: red;
+  }
   .content {
     flex-direction: column;
   }
@@ -483,5 +494,25 @@ a {
   #about .right-column {
     order: 1;
     margin: 4em 3em 1em;
+  }
+  #footer .content {
+    flex-direction: row;
+  }
+  #footer .left-column,
+  #footer .right-column {
+    flex: 0 0 auto;
+    order: 1;
+    margin: 5em 3em;
+  }
+  #footer .left-column {
+    flex: 1;
+    margin-right: 0;
+  }
+  #footer .right-column {
+    flex: 2;
+    margin-left: 0;
+  }
+  #footer p {
+    flex: 3;
   }
 }
