@@ -10,7 +10,7 @@ class PageAbout extends Component {
           </div>
           <div className="left-column">
             <p>
-              My name is Peter and I&#39;m a full-time freelance translator
+              My name is Peter and I&#39;m a professional freelance translator
               discovering the world of coding.
             </p>
             <p>

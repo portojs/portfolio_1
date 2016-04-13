@@ -18,14 +18,19 @@ class PagePortfolio extends Component {
             <p>Stephen King Tribute Page</p>
             <h3>Description:</h3>
             <p>
-              A test to my skills and a Free Code Camp task.
-              At first I didn&#39;t know where to start and
-              just copying from the example seemed too boring.
-              Then one day I saw a nice sliding animation and
+              This was a Free Code Camp task. At first I didn&#39;t
+              know how to approach it, because simply copying an example
+              was not much of a challenge.
+            </p>
+            <p>
+              But one day I saw a nice sliding animation and
               something clicked - finally there was something
-              interesting I wanted to try. As for Stephen King
-              - I read so many of his books in my teens that
-              it was no choice at all.
+              interesting I wanted to try.
+            </p>
+            <p>
+              As for why I decided to dedicate this page to
+              Stephen King - in my teens I read so many
+              of his books that it was no choice at all.
             </p>
             <h3>Technologies:</h3>
             <ul>
