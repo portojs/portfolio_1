@@ -28,8 +28,12 @@ $color-nav: #3e3e3b;
 // clearfix
 %clearfix {
   &:after {
+    // content: ".";
     content: "";
+    // visibility: hidden;
+    // display: block;
     display: table;
+    // height: 0;
     clear: both;
   }
 }
@@ -207,9 +211,14 @@ a {
 
 .content {
   @extend %border-radius;
+  @extend %clearfix;
   background-color: $color-section;
   box-shadow: 0 1px 2px #888;
   margin: 40px 40px 10px 130px;
+}
+
+.clear {
+  clear: both;
 }
 
 .content-title {
@@ -250,7 +259,8 @@ a {
   width: 40%;
 }
 
-.left-column {
+.left-column,
+.right-column {
   float: left;
   margin: 5em 5% 0;
 }
@@ -288,12 +298,6 @@ a {
   padding: 8px;
   border: 2px solid $green;
   margin-right: 0.4em;
-}
-
-#about .left-column,
-#portfolio .left-column,
-#contact .left-column {
-  @extend %clearfix;
 }
 
 #portfolio .right-column {
