@@ -4,11 +4,13 @@ class Footer extends Component {
   render() {
     return (
       <div id="footer" className="content-footer">
-        <div className="left-column">
+        <div className="left-c">
           <h3>ABOUT THIS PAGE</h3>
-          <p>Created with a lot of music and coffee by Peter.</p>
+          <p>Created with lots of music and coffee.</p>
         </div>
-        <div className="right-column">
+        <div className="divider">
+        </div>
+        <div className="right-c">
           <h3>AROUND THE WEB</h3>
           <ul>
             <li><a href="https://twitter.com/peter_krevenets" target="_blank"><i className="fa fa-twitter-square fa-2x"></i></a></li>
