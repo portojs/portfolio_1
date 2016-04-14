@@ -21,15 +21,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-// <ul>
-//   <li className="btns" id="btn1">
-//     <a href="#about"><span></span></a>
-//   </li>
-//   <li className="btns" id="btn2">
-//     <a href="#portfolio"><span></span></a>
-//   </li>
-//   <li className="btns" id="btn3">
-//     <a href="#contact"><span></span></a>
-//   </li>
-// </ul>
