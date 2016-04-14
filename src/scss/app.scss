@@ -277,13 +277,11 @@ a {
   padding: 5px;
   margin-top: auto;
   margin-bottom: auto;
-  // border: 5px solid $green;
   border-radius: 50%;
 }
 
 #about ul {
   padding-left: 0;
-  // margin: 1.9em 0 0;
 }
 
 #about ul li {
@@ -353,7 +351,6 @@ a {
   padding: 0;
   border: none;
   border-bottom: 1px solid $color-nav;
-  // margin-bottom: 2em;
   &:focus {
     outline: 0;
   }
@@ -415,7 +412,6 @@ a {
 .content-footer {
   display: flex;
   flex-wrap: wrap;
-  // align-items: center;
   justify-content: center;
   margin: 40px 40px 10px 130px;
 }
@@ -423,26 +419,12 @@ a {
 #footer {
   color: $color-nav;
   background-color: $color-body;
-  // text-align: center;
-  // margin-left: 90px;
 }
 
 #footer .left-c,
 #footer .right-c {
   flex: 0 0 20em;
   text-align: center;
-  // padding-right: 48px;
-}
-
-#footer .left-c {
-  // padding-right: 10px;
-  // margin: 3.5em 0 1em 24%;
-  // border-right: 1px solid $color-nav;
-  // margin-right: 0;
-}
-
-#footer .right-c {
-  // margin-left: 0;
 }
 
 #footer .divider {
@@ -509,9 +491,33 @@ a {
 }
 
 @media screen and (max-width: 590px) {
-  body {
-    background-color: red;
+  // navbar
+  .nav-bar {
+    height: 80px;
+    width: 100%;
+    background-color: transparentize($color-nav, 0.01);
   }
+  .nav-bar ul {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+  }
+  .nav-bar li {
+    flex: 1;
+    align-self: center;
+    margin: 0;
+  }
+  // sections
+  .content:first-child {
+    margin-top: 80px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 40px 10px 40px;
+  }
+  // footer
   .content-footer {
     flex-direction: column;
   }
