@@ -34,9 +34,9 @@ $(document).ready(function() {
     const buttons = ['about', 'portfolio', 'contact'];
     buttons.forEach(function(button) {
       if (button === currentButton) {
-        $('.' + button).find('i').addClass('highlight');
+        $('.' + button).addClass('highlight');
       } else {
-        $('.' + button).find('i').removeClass('highlight');
+        $('.' + button).removeClass('highlight');
       }
     });
   }

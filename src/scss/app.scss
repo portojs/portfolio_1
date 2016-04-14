@@ -97,21 +97,24 @@ a {
 }
 
 .nav-bar li {
-  margin-bottom: 1.1em;
-}
-
-.fa-list i {
   @extend %transition;
-  color: $white;
-  font-size: 2.5em;
+  margin-bottom: 1.1em;
   opacity: 0.3;
   &:hover {
     opacity: 1;
   }
   &.highlight {
     opacity: 1;
-    color: $green;
+    & i {
+      color: $green;
+    }
   }
+}
+
+.fa-list i {
+  @extend %transition;
+  color: $white;
+  font-size: 2.5em;
 }
 
 //*****************************************************
@@ -495,7 +498,7 @@ a {
   .nav-bar {
     height: 80px;
     width: 100%;
-    background-color: transparentize($color-nav, 0.01);
+    background-color: transparentize($color-nav, 0.03);
   }
   .nav-bar ul {
     display: flex;
@@ -506,16 +509,31 @@ a {
   .nav-bar li {
     flex: 1;
     align-self: center;
+    padding: 16px 0;
     margin: 0;
   }
   // sections
-  .content:first-child {
-    margin-top: 80px;
-  }
   .content {
     display: flex;
     flex-wrap: wrap;
-    margin: 40px 40px 10px 40px;
+    border-radius: 0;
+    margin: 0;
+  }
+  .content-title {
+    border-radius: 0;
+  }
+  .left-column,
+  .right-column {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  // about section
+  #about .content {
+    margin-top: 80px;
+  }
+  #about img {
+    height: auto;
+    width: auto;
   }
   // footer
   .content-footer {
