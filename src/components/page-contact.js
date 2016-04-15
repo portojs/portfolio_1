@@ -38,7 +38,7 @@ class PageContact extends Component {
         <div className="content-title">
           <h2>CONTACT</h2>
         </div>
-        <span className="left-column">
+        <div className="left-column">
           <form onSubmit={event => this.checkForm(event)} name="contactForm" noValidate>
             <div>
               <span></span>
@@ -62,9 +62,9 @@ class PageContact extends Component {
               <p className="warning-message">Please enter your message</p>
             <button type="submit">Send</button>
           </form>
-        </span>
+        </div>
 
-        <span className="right-column">
+        <div className="right-column">
           <p>
             If you have any questions or propositions,
             please do not hesitate to contact me!
@@ -79,7 +79,7 @@ class PageContact extends Component {
               peter.k.nets@gmail.com
             </a>
           </p>
-        </span>
+        </div>
       </div>
     );
   }
