@@ -2,15 +2,25 @@
 $white: #fff;
 $black: #000;
 $green: #65A66A;
-$red: #de6a6a;
-$blue: #569AE8;
+$red  : #de6a6a;
+$blue : #569AE8;
 
 // Functional color variables
-$color-body: #dbdbdb;
+$color-body   : #dbdbdb;
 $color-section: #f5f5f5;
-$color-nav: #3e3e3b;
+$color-nav    : #3e3e3b;
 
-// rounded boxes
+// Font stacks
+$stack-sans-serif  : Helvetica, Arial, sans-serif;
+$stack-serif       : 'Times New Roman', serif;
+$stack-istok       : 'Istok Web', $stack-sans-serif;
+$stack-quattrocento: 'Quattrocento', $stack-serif;
+
+// Media query breakpoints
+$brk-narrow: '(max-width: 690px)';
+$brk-wide  : '(max-width: 1100px)';
+
+// Rounded corners
 %border-radius {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -18,11 +28,36 @@ $color-nav: #3e3e3b;
   border-bottom-left-radius: 15px;
 }
 
-//standard transition effect
+// Transition
 %transition {
   -webkit-transition: all 0.5s;
   -moz-transition:    all 0.5s;
   -o-transition:      all 0.5s;
+}
+
+// Flexbox
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -webkit-order: $val;
+  -ms-flex-order: $val;
+  order: $val;
 }
 
 //*****************************************************
@@ -34,17 +69,14 @@ textarea,
 input {
   background-color: $color-body;
   margin: 0;
-  font-family: 'Quattrocento', serif;
+  font-family: $stack-quattrocento;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
-  font-family: 'Varela Round', sans-serif;
-  font-family: 'Istok Web', sans-serif;
+  font-family: $stack-istok;
 }
 
 p,
@@ -58,6 +90,7 @@ button {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 a {
@@ -78,10 +111,12 @@ a {
   width: 90px;
   background-color: $color-nav;
   ul {
-    padding-left: 20px;
+    @include flexbox;
+    flex-direction: column;
   }
   li {
     @extend %transition;
+    align-self: center;
     margin-bottom: 1.1em;
     opacity: 0.3;
     &:hover {
@@ -94,7 +129,7 @@ a {
       }
     }
   }
-  .fa-list i {
+  i {
     @extend %transition;
     color: $white;
     font-size: 2.5em;
@@ -206,8 +241,8 @@ a {
 
 .content {
   @extend %border-radius;
+  @include flexbox;
   background-color: $color-section;
-  display: flex;
   flex-wrap: wrap;
   margin: 40px 40px 10px 130px;
   box-shadow: 0 1px 2px #888;
@@ -240,14 +275,14 @@ a {
 
 .left-column,
 .right-column {
-  flex: 1;
+  @include flex(1);
   margin: 5em 3em;
   text-align: justify;
 }
 
 #about {
   .left-column {
-    flex: 2;
+    @include flex(2);
     p:first-child {
       margin-top: 0;
     }
@@ -262,9 +297,6 @@ a {
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 50%;
-  }
-  ul {
-    padding-left: 0;
   }
   li {
     @extend %border-radius;
@@ -290,7 +322,6 @@ a {
   }
   p,
   ul {
-    padding-left: 0;
     margin-top: 0.8em;
   }
   li {
@@ -384,15 +415,15 @@ a {
 //*****************************************************
 
 #footer {
+  @include flexbox;
   color: $color-nav;
   background-color: $color-body;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 40px 40px 10px 130px;
   .left-c,
   .right-c {
-    flex: 0 0 20em;
+    @include flex(0 0 20em);
     text-align: center;
   }
   .divider {
@@ -402,9 +433,6 @@ a {
   h3 {
     margin-top: 0;
     margin-bottom: 1.5em;
-  }
-  ul {
-    padding-left: 0;
   }
   li {
     text-align: center;
@@ -430,7 +458,7 @@ a {
 // MEDIA QUERIES
 //*****************************************************
 
-@media screen and (max-width: 1100px) {
+@media #{$brk-wide} {
 
   .content {
     flex-direction: column;
@@ -444,11 +472,11 @@ a {
 
   #about {
     .left-column {
-      order: 2;
+      @include order(2);
       margin: 1em 3em 4em;
     }
     .right-column {
-      order: 1;
+      @include order(1);
       margin: 4em 3em 1em;
     }
     img {
@@ -469,13 +497,13 @@ a {
   #footer {
     .left-c,
     .right-c {
-      flex: 1;
+      @include flex(1);
     }
   }
 
 }
 
-@media screen and (max-width: 690px) {
+@media #{$brk-narrow} {
   // general
   p,
   ul,
@@ -498,15 +526,14 @@ a {
     width: 100%;
     background-color: transparentize($color-nav, 0.03);
     ul {
-      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
       text-align: center;
       height: 100%;
-      padding: 0;
       margin: 0;
     }
     li {
-      flex: 1;
-      align-self: center;
+      @include flex(1);
       padding: 16px 0;
       margin: 0;
     }
