@@ -5,13 +5,13 @@ class NavBar extends Component {
     return(
       <div className="nav-bar">
         <ul className="fa-list">
-          <li>
+          <li className="about">
             <a href="#about"><i className="fa fa-home"></i></a>
           </li>
-          <li>
+          <li className="portfolio">
             <a href="#portfolio"><i className="fa fa-list-ul"></i></a>
           </li>
-          <li>
+          <li className="contact">
             <a href="#contact"><i className="fa fa-envelope-o"></i></a>
           </li>
         </ul>
@@ -21,15 +21,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-// <ul>
-//   <li className="btns" id="btn1">
-//     <a href="#about"><span></span></a>
-//   </li>
-//   <li className="btns" id="btn2">
-//     <a href="#portfolio"><span></span></a>
-//   </li>
-//   <li className="btns" id="btn3">
-//     <a href="#contact"><span></span></a>
-//   </li>
-// </ul>
